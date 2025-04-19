@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Shami's Restaurant</title>
+    <link rel="stylesheet" href="mr.shami.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mr. Shami's Restaurant</h1>
+        <nav>
+            <a href="#shawarma">Shawarma Menu</a>
+            <a href="#tawook">Tawook Menu</a>
+            <a href="#rice">Rice Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="shawarma">
+            <h2>Shawarma Menu</h2>
+            <div class="menu-section">
+                <div class="menu-item">
+                    <div class="menu-title">Chicken Shawarma</div>
+                    <div class="price">300 LBP - شاورما دجاج</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Small Chicken Shawarma</div>
+                    <div class="price">200 LBP - شاورما دجاج صغيرة</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Chicken Shawarma Extra Cheese</div>
+                    <div class="price">400 LBP - شاورما دجاج اكسترا جبنة</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Pizza Shawarma</div>
+                    <div class="price">500 LBP - بيتزا شاورما</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Double Shawarma</div>
+                    <div class="price">400 LBP - دوبل شاورما</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tawook">
+            <h2>Tawook Menu</h2>
+            <div class="menu-section">
+                <div class="menu-item">
+                    <div class="menu-title">Tawook on Coal</div>
+                    <div class="price">400 LBP - طاووق على الفحم</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Tawook on Gas</div>
+                    <div class="price">300 LBP - طاووق على الغاز</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Sawdat Chicken</div>
+                    <div class="price">250 LBP - سودة دجاج</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rice">
+            <h2>Rice Menu</h2>
+            <div class="menu-section">
+                <div class="menu-item">
+                    <div class="menu-title">Small Rice</div>
+                    <div class="price">100 LBP - أرز صغير</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Medium Rice</div>
+                    <div class="price">300 LBP - أرز وسط</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title">Large Rice</div>
+                    <div class="price">400 LBP - أرز كبير</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mr. Shami's Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling effect for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
